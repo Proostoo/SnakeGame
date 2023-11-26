@@ -17,47 +17,22 @@ class Program
     {
 
         Console.WindowHeight = 16;
-
-        Console.WindowWidth = 32;
-
+        Console.WindowWidth = 3;
         int screenwidth = Console.WindowWidth;
-
         int screenheight = Console.WindowHeight;
-
         Random randomnummer = new Random();
-
-        pixel hoofd = new pixel();
-
-        hoofd.xpos = screenwidth / 2;
-
-        hoofd.ypos = screenheight / 2;
-
-        hoofd.schermkleur = ConsoleColor.Red;
-
+        Pixel hoofd = new Pixel();
+        hoofd.xPos = screenwidth / 2;
+        hoofd.yPos = screenheight / 2;
+        hoofd.schermKleur = ConsoleColor.Red;
+        //test
         string movement = "RIGHT";
-
         List<int> telje = new List<int>();
-
         int score = 0;
 
-        Pixel hoofd = new Pixel();
-
-        hoofd.xPos = screenwidth / 2;
-
-        hoofd.yPos = screenheight / 2;
-
-        hoofd.schermKleur = ConsoleColor.Red;
-
-
-
         List<int> teljePositie = new List<int>();
-
-
-
         teljePositie.Add(hoofd.xPos);
-
         teljePositie.Add(hoofd.yPos);
-
 
 
         DateTime tijd = DateTime.Now;
