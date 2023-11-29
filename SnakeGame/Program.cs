@@ -17,7 +17,7 @@ class Program
     {
 
         Console.WindowHeight = 16;
-        Console.WindowWidth = 3;
+        Console.WindowWidth = 16;
         int screenwidth = Console.WindowWidth;
         int screenheight = Console.WindowHeight;
         Random randomnummer = new Random();
@@ -109,7 +109,7 @@ class Program
 
             }
 
-            Console.ForegroundColor =  /* ?? */;
+            Console.ForegroundColor =  ConsoleColor.DarkBlue;
 
             Console.WriteLine("Score: " + score);
 
@@ -257,7 +257,7 @@ class Program
 
                     Console.SetCursorPosition(screenwidth / 5, screenheight / 2);
 
-                    //???
+                    Console.WriteLine("You scored!");
 
                     Console.SetCursorPosition(screenwidth / 5, screenheight / 2 + 1);
 
@@ -303,7 +303,7 @@ public class Obstakel
 
     public int Xpos { get; set; }
 
-    // ?
+    public int Ypos { get; set; }
 
     public ConsoleColor schermKleur { get; set; }
 
